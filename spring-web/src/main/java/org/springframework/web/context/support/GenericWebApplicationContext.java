@@ -180,7 +180,7 @@ public class GenericWebApplicationContext extends GenericApplicationContext
 	 */
 	@Override
 	protected void onRefresh() {
-		this.themeSource = UiApplicationContextUtils.initThemeSource(this);
+			this.themeSource = UiApplicationContextUtils.initThemeSource(this);
 	}
 
 	/**

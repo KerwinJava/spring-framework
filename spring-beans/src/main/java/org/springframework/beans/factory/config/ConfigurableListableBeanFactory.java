@@ -50,6 +50,9 @@ public interface ConfigurableListableBeanFactory
 	void ignoreDependencyType(Class<?> type);
 
 	/**
+	 * ConfigurableListableBeanFactory#ignoreDependencyInterface
+	 * 忽略接口的依赖自动装配
+	 *
 	 * Ignore the given dependency interface for autowiring.
 	 * <p>This will typically be used by application contexts to register
 	 * dependencies that are resolved in other ways, like BeanFactory through
@@ -63,6 +66,9 @@ public interface ConfigurableListableBeanFactory
 	void ignoreDependencyInterface(Class<?> ifc);
 
 	/**
+	 * ConfigurableListableBeanFactory#registerResolvableDependency
+	 * 当一个接口有多个实现类时，可以通过这个方法明确注入哪个类
+	 *
 	 * Register a special dependency type with corresponding autowired value.
 	 * <p>This is intended for factory/context references that are supposed
 	 * to be autowirable but are not defined as beans in the factory:
